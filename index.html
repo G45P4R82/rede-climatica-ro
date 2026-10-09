@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apresentação da Rede Climática Comunitária de Porto Velho: dados locais, IoT de baixo custo e decisões melhores no campo.">
+  <title>Rede Climática Comunitária | Porto Velho</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#slide-1" aria-label="Início">
+      <span class="brand-mark">R</span>
+      <span>REDE CLIMÁTICA<br><b>COMUNITÁRIA</b></span>
+    </a>
+    <div class="topbar-meta">
+      <span class="eyebrow">PORTO VELHO · RONDÔNIA</span>
+      <span class="slide-count" aria-live="polite"><b id="current-slide">01</b> / 14</span>
+    </div>
+  </header>
+
+  <main id="deck" tabindex="-1">
+    <section class="slide slide-hero active" id="slide-1" data-title="A rede começa aqui">
+      <div class="hero-copy">
+        <p class="kicker"><span class="status-dot"></span> Infraestrutura comunitária em construção</p>
+        <h1>Dados locais para<br><em>decisões locais.</em></h1>
+        <p class="lead">Uma rede aberta de estações meteorológicas, sensores de baixo custo e tecnologia compartilhada para fortalecer quem produz, pesquisa e vive em Rondônia.</p>
+        <div class="hero-tags"><span>IoT</span><span>LoRa / MeshCore</span><span>Dados abertos</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Diagrama de três estações conectadas">
+        <div class="orb orb-large"></div><div class="orb orb-small"></div>
+        <div class="station station-city-a"><span class="station-pulse"></span><b>PV · 01</b><small>cidade</small></div>
+        <div class="station station-city-b"><span class="station-pulse"></span><b>PV · 02</b><small>cidade</small></div>
+        <div class="station station-rural"><span class="station-pulse"></span><b>RO · 03</b><small>sítio</small></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="visual-label label-top">3 estações</span><span class="visual-label label-bottom">uma rede comunitária</span>
+      </div>
+      <div class="hero-footer"><span>PROPOSTA INSTITUCIONAL · 2026—2028</span><span>↘ navegue para explorar</span></div>
+    </section>
+
+    <section class="slide" id="slide-2" data-title="O desafio">
+      <div class="slide-heading"><span class="section-number">01</span><p class="kicker">O ponto de partida</p><h2>O clima muda em poucos quilômetros.</h2><p class="subhead">O dado oficial é importante. O dado medido perto da lavoura é acionável.</p></div>
+      <div class="challenge-grid">
+        <article class="feature-card feature-card-dark"><span class="card-index">01</span><h3>Decisão sem contexto</h3><p>Calendário de plantio, irrigação e manejo dependem de condições que variam entre cidade, propriedade e comunidade.</p></article>
+        <article class="feature-card"><span class="card-index">02</span><h3>Dados inacessíveis</h3><p>Soluções comerciais podem ser caras, fechadas ou não oferecer histórico local para agricultores familiares.</p></article>
+        <article class="feature-card"><span class="card-index">03</span><h3>Conhecimento disperso</h3><p>Escolas, técnicos, pesquisadores e produtores têm capacidade, mas falta uma infraestrutura comum para colaborar.</p></article>
+      </div>
+      <div class="quote-line"><span>O objetivo não é apenas medir.</span><strong>É transformar medição em autonomia.</strong></div>
+    </section>
+
+    <section class="slide" id="slide-3" data-title="A proposta">
+      <div class="split-layout">
+        <div class="slide-heading"><span class="section-number">02</span><p class="kicker">A proposta</p><h2>Um laboratório vivo para o território.</h2><p class="subhead">Uma rede pequena o bastante para começar agora e aberta o bastante para crescer com a comunidade.</p></div>
+        <div class="principles">
+          <div class="principle"><span>01</span><div><h3>Baixo custo</h3><p>Componentes acessíveis, reparáveis e documentados.</p></div></div>
+          <div class="principle"><span>02</span><div><h3>Dados locais</h3><p>Histórico contínuo para enxergar microclimas e padrões.</p></div></div>
+          <div class="principle"><span>03</span><div><h3>Rede compartilhada</h3><p>Instituições, técnicos, agricultores e estudantes constroem juntos.</p></div></div>
+          <div class="principle"><span>04</span><div><h3>Uso público</h3><p>Transparência, documentação e ferramentas que retornam valor à comunidade.</p></div></div>
+        </div>
+      </div>
+      <div class="statement">“Construir dados a favor dos cidadãos, começando pelo lugar onde as decisões acontecem.”</div>
+    </section>
+
+    <section class="slide" id="slide-4" data-title="O que já existe">
+      <div class="slide-heading"><span class="section-number">03</span><p class="kicker">Pronto para o próximo passo</p><h2>A infraestrutura comunitária já está rodando.</h2><p class="subhead">O MVP começa com ativos reais, não com uma ideia no papel.</p></div>
+      <div class="ready-layout">
+        <div class="ready-stack">
+          <div class="server-card"><div class="server-icon">▣</div><div><span class="server-status">ATIVO · TAILSCALE</span><h3>verde008</h3><p>Servidor comunitário em Rondônia</p></div><span class="server-check">✓</span></div>
+          <div class="server-card"><div class="server-icon">▣</div><div><span class="server-status">ATIVO · TAILSCALE</span><h3>verde009</h3><p>Servidor comunitário em Rondônia</p></div><span class="server-check">✓</span></div>
+        </div>
+        <div class="ready-notes"><div class="ready-line"><b>REDE</b><span>Integração privada entre nós por Tailscale</span></div><div class="ready-line"><b>PROCESSAMENTO</b><span>Servidores disponíveis para jobs de tratamento de dados IoT</span></div><div class="ready-line"><b>EXPERIMENTOS</b><span>Coleta com sensores, MQTT e MeshCore já iniciada</span></div><div class="ready-line"><b>PRÓXIMO</b><span>Conectar as três estações ao pipeline central</span></div></div>
+      </div>
+      <p class="footnote">Os nomes dos servidores identificam a infraestrutura lógica. IPs, credenciais e chaves permanecem privados.</p>
+    </section>
+
+    <section class="slide" id="slide-5" data-title="Três estações">
+      <div class="slide-heading"><span class="section-number">04</span><p class="kicker">O MVP físico</p><h2>Três pontos de observação.<br><em>Uma leitura do território.</em></h2></div>
+      <div class="map-stage"><div class="map-grid"></div><div class="route route-city"></div><div class="route route-field"></div><div class="map-node node-city-a"><b>01</b><span>Porto Velho<br><small>cidade</small></span></div><div class="map-node node-city-b"><b>02</b><span>Porto Velho<br><small>cidade</small></span></div><div class="map-node node-field"><b>03</b><span>Sítio próximo<br><small>campo</small></span></div><div class="map-caption"><span class="legend-dot"></span> estação com temperatura + umidade<br><span class="legend-line"></span> futuro enlace MeshCore</div></div>
+      <div class="station-specs"><div><b>01—03</b><span>estações meteorológicas</span></div><div><b>2 + 1</b><span>cidade + campo</span></div><div><b>24/7</b><span>histórico contínuo</span></div></div>
+    </section>
+
+    <section class="slide" id="slide-6" data-title="LoRa e MeshCore">
+      <div class="slide-heading"><span class="section-number">05</span><p class="kicker">Conectividade de campo</p><h2>Quando a internet não chega,<br><em>a rede pode chegar.</em></h2><p class="subhead">Duas antenas MeshCore/LoRa ampliam a capacidade de observar e transportar dados entre cidade e campo.</p></div>
+      <div class="radio-diagram"><div class="radio-node radio-city"><span class="tower">⌁</span><b>ANTENA 01</b><small>Porto Velho · gateway urbano</small></div><div class="radio-wave wave-1"></div><div class="radio-wave wave-2"></div><div class="radio-wave wave-3"></div><div class="radio-node radio-field"><span class="tower">⌁</span><b>ANTENA 02</b><small>Sítio · gateway rural</small></div><div class="radio-label">MESHCORE / LORA<br><small>enlace de baixa potência</small></div></div>
+      <div class="three-columns"><div><b>Medir</b><span>ESP32 + sensores de temperatura e umidade</span></div><div><b>Transportar</b><span>MeshCore, LoRa e gateways locais</span></div><div><b>Processar</b><span>Tailscale + servidores comunitários + VPS</span></div></div>
+    </section>
+
+    <section class="slide" id="slide-7" data-title="Arquitetura técnica">
+      <div class="slide-heading"><span class="section-number">06</span><p class="kicker">Arquitetura</p><h2>Do sensor ao insight,<br>com rastreabilidade.</h2></div>
+      <div class="pipeline"><div class="pipeline-step"><span>01</span><b>SENSOR</b><small>temperatura<br>umidade</small></div><i>→</i><div class="pipeline-step"><span>02</span><b>GATEWAY</b><small>LoRa<br>MeshCore</small></div><i>→</i><div class="pipeline-step pipeline-highlight"><span>03</span><b>PROCESSAMENTO</b><small>verde008<br>verde009</small></div><i>→</i><div class="pipeline-step"><span>04</span><b>VPS</b><small>API<br>banco + backup</small></div><i>→</i><div class="pipeline-step"><span>05</span><b>USO</b><small>dashboard<br>alertas</small></div></div>
+      <div class="architecture-notes"><span><b>Offline first</b> armazenamento local durante falhas</span><span><b>Observável</b> status, bateria e última leitura</span><span><b>Reproduzível</b> documentação e dados exportáveis</span></div>
+    </section>
+
+    <section class="slide" id="slide-8" data-title="MVP técnico">
+      <div class="slide-heading"><span class="section-number">07</span><p class="kicker">Primeira entrega</p><h2>O mínimo que já produz valor.</h2></div>
+      <div class="mvp-grid"><div class="mvp-main"><div class="mvp-check"><span>✓</span><div><b>Três estações funcionando</b><p>Identidade, localização e status de cada ponto.</p></div></div><div class="mvp-check"><span>✓</span><div><b>Temperatura e umidade</b><p>Leitura periódica com data, hora e origem.</p></div></div><div class="mvp-check"><span>✓</span><div><b>Histórico e exportação</b><p>Dashboard inicial, CSV/JSON e backups.</p></div></div></div><div class="mvp-side"><div class="metric"><b>3</b><span>estações</span></div><div class="metric"><b>2</b><span>variáveis</span></div><div class="metric"><b>1</b><span>pipeline comum</span></div></div></div>
+      <div class="validation-bar"><b>Critério de sucesso em 2026</b><span>dados contínuos, qualidade conhecida e agricultores envolvidos na validação.</span></div>
+    </section>
+
+    <section class="slide" id="slide-9" data-title="Aplicações">
+      <div class="slide-heading"><span class="section-number">08</span><p class="kicker">Do dado à decisão</p><h2>Ferramentas para quem está no campo.</h2><p class="subhead">As aplicações abaixo são hipóteses para validar com agricultores, não promessas prontas.</p></div>
+      <div class="use-cases"><article><span>01</span><h3>Irrigação</h3><p>Observar calor, umidade e chuva para usar melhor a água.</p></article><article><span>02</span><h3>Calendário agrícola</h3><p>Comparar o histórico local com plantio e colheita.</p></article><article><span>03</span><h3>Alertas</h3><p>Notificar extremos de temperatura e umidade.</p></article><article><span>04</span><h3>Pesquisa</h3><p>Estudar microclimas, solo, pragas e doenças.</p></article><article><span>05</span><h3>Transparência</h3><p>Disponibilizar dados para cidadãos e instituições.</p></article><article><span>06</span><h3>Autonomia</h3><p>Trocar soluções caras por tecnologia reparável e local.</p></article></div>
+    </section>
+
+    <section class="slide" id="slide-10" data-title="Parceiros">
+      <div class="slide-heading"><span class="section-number">09</span><p class="kicker">Ecossistema</p><h2>Ninguém constrói uma rede<br><em>sozinho.</em></h2></div>
+      <div class="partner-grid"><article class="partner-feature"><span class="partner-symbol">IF</span><h3>IFRO · instituições de ensino</h3><p>Pesquisa aplicada, estudantes, laboratórios, extensão e validação dos sensores.</p><strong>ganham: dados reais, projetos, artigos, TCCs e impacto territorial.</strong></article><article><b>HACKERSPACES<br>+ MAKERSPACES</b><p>Montagem, prototipagem, caixas e manutenção.</p><strong>ganham: laboratório vivo e desafios reais.</strong></article><article><b>COMUNIDADES<br>TÉCNICAS</b><p>Linux, redes, software livre, dados e segurança.</p><strong>ganham: portfólio e infraestrutura de impacto.</strong></article><article><b>GRUPOS DE<br>PESQUISA</b><p>Clima, agricultura, solo e ciência cidadã.</p><strong>ganham: série histórica e campo experimental.</strong></article><article><b>COOPERATIVAS<br>+ COMUNIDADES</b><p>Locais, necessidades e validação.</p><strong>ganham: informação para decidir melhor.</strong></article><article><b>EMPRESAS<br>+ ÓRGÃOS PÚBLICOS</b><p>Sensores, conexão, editais e articulação.</p><strong>ganham: inovação e impacto regional.</strong></article></div>
+    </section>
+
+    <section class="slide" id="slide-11" data-title="O papel do IFRO">
+      <div class="split-layout ifro-layout"><div class="slide-heading"><span class="section-number">10</span><p class="kicker">Parceria em potencial</p><h2>O IFRO pode transformar a rede em formação.</h2><p class="subhead">A infraestrutura vira um laboratório didático permanente para Rondônia.</p></div><div class="ifro-list"><div><span>01</span><b>Estudantes</b><p>TCCs, iniciação científica e projetos práticos.</p></div><div><span>02</span><b>Laboratórios</b><p>Eletrônica, IoT, redes, dados e prototipagem.</p></div><div><span>03</span><b>Extensão</b><p>Oficinas e capacitação para comunidades rurais.</p></div><div><span>04</span><b>Conhecimento</b><p>Artigos, relatórios e soluções que retornam ao território.</p></div></div></div><div class="statement small-statement">“Uma parceria em que o estudante aprende construindo, o pesquisador investiga medindo e a comunidade decide usando.”</div>
+    </section>
+
+    <section class="slide" id="slide-12" data-title="Governança">
+      <div class="slide-heading"><span class="section-number">11</span><p class="kicker">Confiança</p><h2>Dados a favor dos cidadãos<br>exigem responsabilidade.</h2></div>
+      <div class="governance-grid"><div><span class="governance-icon">◌</span><h3>Aberto por padrão</h3><p>Dados meteorológicos agregados, documentação e métodos disponíveis.</p></div><div><span class="governance-icon">⌂</span><h3>Privacidade</h3><p>Localização detalhada e informações de propriedades somente com autorização.</p></div><div><span class="governance-icon">↗</span><h3>Rastreável</h3><p>Origem, qualidade, falhas e calibração registrados ao longo do tempo.</p></div><div><span class="governance-icon">◎</span><h3>Participativo</h3><p>A comunidade ajuda a definir quais ferramentas realmente importam.</p></div></div>
+      <div class="governance-footer"><b>Princípio:</b> dados públicos devem gerar retorno público.</div>
+    </section>
+
+    <section class="slide" id="slide-13" data-title="Roadmap 2026—2028">
+      <div class="slide-heading"><span class="section-number">12</span><p class="kicker">Roadmap</p><h2>Começar pequeno.<br>Aprender rápido. Expandir com propósito.</h2></div>
+      <div class="roadmap"><div class="roadmap-year current"><div class="year-label">2026 <span>fundação</span></div><ul><li>3 estações e 2 antenas MeshCore</li><li>Pipeline Tailscale + VPS</li><li>Dashboard e dados exportáveis</li><li>Calibração e validação inicial</li></ul></div><div class="roadmap-year"><div class="year-label">2027 <span>pesquisa aplicada</span></div><ul><li>Chuva e umidade do solo</li><li>Novos nós e energia solar</li><li>API para pesquisa e alertas</li><li>Oficinas com parceiros locais</li></ul></div><div class="roadmap-year"><div class="year-label">2028 <span>rede regional</span></div><ul><li>Expansão para outros municípios</li><li>Catálogo público de dados</li><li>Recomendações e relatórios</li><li>Governança e sustentabilidade</li></ul></div></div>
+      <div class="roadmap-bottom"><span>2026—2028</span><b>De três estações a uma infraestrutura regional replicável.</b></div>
+    </section>
+
+    <section class="slide slide-final" id="slide-14" data-title="Convite">
+      <div class="final-mark">R</div><p class="kicker"><span class="status-dot"></span> Próximo passo</p><h2>Vamos medir o que<br><em>importa para Rondônia.</em></h2><p class="lead">Agricultores, estudantes, técnicos, pesquisadores, hackerspaces, empresas e instituições podem construir esta rede juntos.</p><div class="final-actions"><span>REDE CLIMÁTICA COMUNITÁRIA</span><span>PORTO VELHO · RO</span><span>2026—2028</span></div><p class="final-note">Apresentação de proposta · infraestrutura aberta · impacto local</p></section>
+  </main>
+
+  <nav class="deck-controls" aria-label="Controles da apresentação"><button id="prev" aria-label="Slide anterior">←</button><div class="progress"><span id="progress-bar"></span></div><button id="next" aria-label="Próximo slide">→</button><button id="fullscreen" aria-label="Tela cheia">⛶</button></nav>
+  <div class="keyboard-hint">← → navegar &nbsp; · &nbsp; F tela cheia</div>
+  <script src="app.js"></script>
+</body>
+</html>
