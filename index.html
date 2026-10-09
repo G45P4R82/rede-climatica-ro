@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Apresentação da Rede Climática Comunitária de Porto Velho: dados locais, IoT de baixo custo e decisões melhores no campo.">
   <title>Rede Climática Comunitária | Porto Velho</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -16,7 +18,7 @@
     </a>
     <div class="topbar-meta">
       <span class="eyebrow">PORTO VELHO · RONDÔNIA</span>
-      <span class="slide-count" aria-live="polite"><b id="current-slide">01</b> / 14</span>
+      <span class="slide-count" aria-live="polite"><b id="current-slide">01</b> / <span id="total-slides">17</span></span>
     </div>
   </header>
 
@@ -74,10 +76,28 @@
       <p class="footnote">Os nomes dos servidores identificam a infraestrutura lógica. IPs, credenciais e chaves permanecem privados.</p>
     </section>
 
-    <section class="slide" id="slide-5" data-title="Três estações">
+    <section class="slide" id="slide-estações" data-title="Três estações">
       <div class="slide-heading"><span class="section-number">04</span><p class="kicker">O MVP físico</p><h2>Três pontos de observação.<br><em>Uma leitura do território.</em></h2></div>
       <div class="map-stage"><div class="map-grid"></div><div class="route route-city"></div><div class="route route-field"></div><div class="map-node node-city-a"><b>01</b><span>Porto Velho<br><small>cidade</small></span></div><div class="map-node node-city-b"><b>02</b><span>Porto Velho<br><small>cidade</small></span></div><div class="map-node node-field"><b>03</b><span>Sítio próximo<br><small>campo</small></span></div><div class="map-caption"><span class="legend-dot"></span> estação com temperatura + umidade<br><span class="legend-line"></span> futuro enlace MeshCore</div></div>
       <div class="station-specs"><div><b>01—03</b><span>estações meteorológicas</span></div><div><b>2 + 1</b><span>cidade + campo</span></div><div><b>24/7</b><span>histórico contínuo</span></div></div>
+    </section>
+
+    <section class="slide" id="slide-5" data-title="Mapa de Porto Velho">
+      <div class="slide-heading"><span class="section-number">05</span><p class="kicker">Território</p><h2>Porto Velho como<br><em>laboratório aberto.</em></h2><p class="subhead">O mapa mostra a implantação proposta: dois pontos urbanos, um ponto rural e os futuros enlaces MeshCore.</p></div>
+      <div id="real-map" class="real-map" role="img" aria-label="Mapa real de Porto Velho com três pontos propostos"></div>
+      <div class="map-disclaimer">PONTOS PROPOSTOS · posições exatas serão definidas com participantes e proprietários das áreas</div>
+    </section>
+
+    <section class="slide" id="slide-universidades" data-title="Ganhos para universidades">
+      <div class="slide-heading"><span class="section-number">06</span><p class="kicker">Retorno institucional</p><h2>Universidade que pesquisa<br><em>o próprio território.</em></h2><p class="subhead">A rede transforma problemas reais de Rondônia em formação, pesquisa aplicada e extensão.</p></div>
+      <div class="benefit-columns"><div class="benefit-column"><span class="benefit-label">O QUE A REDE OFERECE</span><ul><li>Base de dados climáticos local e contínua</li><li>Campo experimental para IoT, LoRa e ciência de dados</li><li>Problemas reais para TCCs, iniciação científica e pós-graduação</li><li>Infraestrutura para projetos interdisciplinares</li></ul></div><div class="benefit-column benefit-highlight"><span class="benefit-label">O QUE A UNIVERSIDADE GANHA</span><ul><li>Publicações e relatórios com impacto regional</li><li>Projetos de extensão com comunidades</li><li>Formação prática de estudantes</li><li>Visibilidade, inovação e conexão com o setor produtivo</li></ul></div></div>
+      <div class="statement small-statement">IFRO, UNIR e outros grupos podem usar a rede como laboratório vivo, com dados que retornam para a sociedade.</div>
+    </section>
+
+    <section class="slide" id="slide-agricultura" data-title="Ganhos para agricultores">
+      <div class="slide-heading"><span class="section-number">07</span><p class="kicker">Retorno para a comunidade</p><h2>Mais informação para<br><em>produzir melhor.</em></h2><p class="subhead">O agricultor não recebe apenas um gráfico. Recebe ferramentas simples para reduzir risco e decidir no tempo certo.</p></div>
+      <div class="farmer-grid"><article><span>01</span><h3>Agricultura familiar</h3><p>Histórico local para planejar plantio, irrigação e manejo sem depender de soluções caras.</p></article><article><span>02</span><h3>Pequena e média produção</h3><p>Alertas e indicadores para antecipar extremos, proteger safras e usar melhor a água.</p></article><article><span>03</span><h3>Autonomia</h3><p>Equipamentos reparáveis, dados compreensíveis e capacitação junto a técnicos locais.</p></article><article><span>04</span><h3>Cooperação</h3><p>Dados compartilhados fortalecem associações, cooperativas e reivindicações públicas.</p></article></div>
+      <div class="farmer-return"><b>GANHO CONCRETO</b><span>decisões baseadas nas condições da própria propriedade, não apenas em médias distantes.</span></div>
     </section>
 
     <section class="slide" id="slide-6" data-title="LoRa e MeshCore">
@@ -130,6 +150,7 @@
 
   <nav class="deck-controls" aria-label="Controles da apresentação"><button id="prev" aria-label="Slide anterior">←</button><div class="progress"><span id="progress-bar"></span></div><button id="next" aria-label="Próximo slide">→</button><button id="fullscreen" aria-label="Tela cheia">⛶</button></nav>
   <div class="keyboard-hint">← → navegar &nbsp; · &nbsp; F tela cheia</div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="app.js"></script>
 </body>
 </html>

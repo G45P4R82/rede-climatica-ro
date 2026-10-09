@@ -1,7 +1,9 @@
 const slides = [...document.querySelectorAll('.slide')];
 const current = document.querySelector('#current-slide');
+const total = document.querySelector('#total-slides');
 const progress = document.querySelector('#progress-bar');
 let index = Math.max(0, slides.findIndex(slide => slide.id === location.hash.slice(1)));
+total.textContent = slides.length;
 
 function showSlide(nextIndex, updateHash = true) {
   index = (nextIndex + slides.length) % slides.length;
@@ -11,6 +13,7 @@ function showSlide(nextIndex, updateHash = true) {
   progress.style.width = `${((index + 1) / slides.length) * 100}%`;
   if (updateHash) history.replaceState(null, '', `#${slides[index].id}`);
   document.title = `${slides[index].dataset.title} | Rede Climática Comunitária`;
+  document.dispatchEvent(new Event('slidechange'));
 }
 
 document.querySelector('#prev').addEventListener('click', () => showSlide(index - 1));
@@ -36,3 +39,20 @@ document.addEventListener('touchend', event => {
 }, { passive: true });
 
 showSlide(index, false);
+
+const mapElement = document.querySelector('#real-map');
+if (mapElement && window.L) {
+  const map = L.map(mapElement, { scrollWheelZoom: false, zoomControl: true }).setView([-8.7612, -63.9004], 10);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+  const points = [
+    { coords: [-8.748, -63.903], title: 'Ponto urbano proposto 01', detail: 'Porto Velho · localização a definir' },
+    { coords: [-8.785, -63.878], title: 'Ponto urbano proposto 02', detail: 'Porto Velho · localização a definir' },
+    { coords: [-8.884, -63.775], title: 'Ponto rural proposto 03', detail: 'Sítio próximo · localização a definir' }
+  ];
+  points.forEach(point => L.marker(point.coords).addTo(map).bindPopup(`<b>${point.title}</b><br>${point.detail}`));
+  map.fitBounds(points.map(point => point.coords), { padding: [25, 25] });
+  document.addEventListener('slidechange', () => map.invalidateSize());
+}

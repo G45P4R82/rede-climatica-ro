@@ -30,4 +30,4 @@ Este repositório não deve conter IPs privados, senhas, tokens Tailscale, arqui
 
 ## Conteúdo do projeto
 
-O roadmap cobre 2026 a 2028 e separa infraestrutura já ativa de itens planejados. A participação de IFRO, hackerspaces, comunidades técnicas, grupos de pesquisa, cooperativas, empresas e órgãos públicos é apresentada como oportunidade de cooperação, não como parceria já formalizada.
+O roadmap cobre 2026 a 2028 e separa infraestrutura já ativa de itens planejados. A apresentação inclui um mapa real de Porto Velho com pontos propostos, além de slides específicos sobre os ganhos para universidades e para a agricultura familiar, pequena e média produção. A participação de IFRO, hackerspaces, comunidades técnicas, grupos de pesquisa, cooperativas, empresas e órgãos públicos é apresentada como oportunidade de cooperação, não como parceria já formalizada.
